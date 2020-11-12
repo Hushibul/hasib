@@ -1,0 +1,48 @@
+/*######## Defaults ######*/
+nav,
+header, 
+footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+/*########### Nav Bar ##########*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+nav ul.topnav li.topnav-right{
+    float: right;
+}
+
+nav ul.topnav li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+nav ul.topnav li a:hover{
+    background-color: #0080ff;
+    color: #fff;
+}
