@@ -10,6 +10,16 @@ body{
     margin: 0;
 }
 
+label{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1;
+}
+
 .container{
     width: 100%;
     margin: auto;
@@ -31,16 +41,17 @@ body{
 }
 
 .col-1{width:8.33%}
-.col-1{width:16.66%}
-.col-1{width:25%}
-.col-1{width:33.33%}
-.col-1{width:41.66%}
-.col-1{width:50%}
-.col-1{width:58.33%}
-.col-1{width:66.66%}
-.col-1{width:83.33%}
-.col-1{width:91.66%}
-.col-1{width:100%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
 
 /*############# Custom Styles ##########*/
 #section-1-gradient{
@@ -48,15 +59,57 @@ body{
     background: linear-gradient(#076DFF, #65a5ff);
 }
 
+div.box{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+}
+
+button{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+button.learnmore{
+    display: block;
+    margin: auto;
+}
+
+div.icon{
+    width: 100%;
+}
+
 .leftside-col{
     margin-left: 30%;
 }
 
+.rightside-col{
+    margin-left: 15%;
+}
+
+div.col-6 img.imagepicker{
+    margin-left: 10%;
+}
+
+h1.section-2header{
+    font-size: 56px;
+    text-align: center;
+}
+
 h1.large{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
-    line-height: 70px;
+    line-height: 50px;
 }
 
 form h2{
@@ -68,6 +121,7 @@ input[type="text"]{
     width: 400px;
     min-width: 100px;
     padding: 5px;
+    border-radius: 7px;
 }
 
 /*########### Nav Bar ##########*/
@@ -111,6 +165,28 @@ nav ul{
     display: none;
 }
 
+footer.footsy{
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+footer.footsy ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+footer.footsy ul li{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
 /*################ Mobile ############*/
 @media screen and (max-width: 680px){
     ul.topnav li:not(:nth-child(1)){
@@ -141,5 +217,43 @@ nav ul{
         display: block;
         text-align: left;
 
+    }
+
+    .col-6, 
+    .col-4{
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobileStack{
+        width: 50%;
+        display: block;
+    }
+
+    div.box{
+        padding: 5px;
+    }
+
+    h1.section-2header{
+        font-size: 50px;
+    }
+
+    div.leftside-col,
+    div.rightside-col{
+        margin: 15px;
+    }
+
+    input[type="text"]{
+        width: 350px;
+    }
+
+    .videocontainer iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    div.col-6 img.imagepicker{
+        margin: 0;
     }
 }
