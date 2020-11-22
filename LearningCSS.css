@@ -1,0 +1,171 @@
+/* There are 4 type of selector in CSS. */
+/* Element Selector: */
+/* p{
+    border-color: 2px dotted brown;
+} */
+
+/* ID Selector: */
+/* #idselctor{
+    color: yellow;
+} */
+
+/* Class Selector:  */
+/* .classSelector{
+    color: green;
+    background-color: blanchedalmond;
+} */
+
+/* Grouping Selector:  */
+/* header, footer, p, h1{
+    color: purple;
+} */
+
+/* Universal Selector:  */
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+
+
+/* Fonts: */
+ /* p{
+    font-family: 'Nerko One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-style: oblique;
+ } */
+
+
+
+ /* CSS Colors: */
+/* color by name: */
+/* p{
+    color: blue;
+} */
+
+/* color by rgb */
+/* p{
+    color: rgb(0, 0, 255);
+} */
+
+/* color by hashcode */
+/* p{
+    color: #ffffff;
+} */
+
+
+
+/* Border: */
+/* #paragraf{
+    border: 3px solid darkcyan;
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    border-top-left-radius: 30px;
+} */
+
+
+
+/* Background: */
+/* #paragraf{
+    height: 500px;
+    width: 500px;
+    border: 4px solid darkblue;
+    background-image: url('ml.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} */
+/* background-repeat: no-repeat, x, y; */
+/* background-position: x, y; */
+
+
+
+/* Margin & Padding: */
+/* #paragraf{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 4px solid darkcyan;
+
+    padding: 10px 5px 10px 5px;
+    margin: 5px 10px;
+} */
+/* padding/margin: top right bottom left; */
+/* padding/margin: y(top, bottom), x(right, left); */
+/* Ex: padding: 10px 5px; */
+/* padding is for creating space outside element inside border */
+/* margin is for creating space outside border */
+
+
+/* Float and Clear: */
+/* .container{
+    width: 900px;
+    border: 3px solid purple;
+    background-color: aqua;
+   
+}
+
+.item{
+    border: 3px solid rgb(23, 10, 66);
+    margin: 12px 3px;
+    padding: 12px 3px;
+    background-color: rgb(214, 149, 149);
+    
+}
+
+#fruit{
+    float: left;
+    width: 48%;
+}
+
+#computer{
+    float: left;
+    width: 48%;
+}
+
+#stationary{
+    clear: both;
+    width: 100%;
+} */
+/* clear makes sure that the float doesn't bother the element */
+
+
+/* Text: */
+/* div.item h3{
+    text-align: center;
+}  */
+
+/* 
+Psedu styling: */
+/* .btn{
+    background-color: crimson;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: blue;
+    color: white;
+}
+
+a:visited{
+    background-color: yellow;
+    color: red;
+}
+
+a:active{
+    background-color: aqua;
+    color: black;
+} */
