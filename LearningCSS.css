@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
 } */
+/* box-sizing: border-box makes sure that margin or padding can't override the width. */
 
 
 
@@ -169,3 +170,59 @@ a:active{
     background-color: aqua;
     color: black;
 } */
+
+
+/* Display Property: */
+/* header{
+    border: 3px solid red;
+    
+} */
+
+/* img{
+    width: 35px;
+    display: block;
+    margin: auto;
+} */
+/* img is an in-line element we made it block */
+
+/* h3{
+    text-align: center;
+    margin: 0px;
+} */
+
+/* .box{
+    border: 2px solid black;
+    background-color: grey;
+    margin: 4px;
+    padding: 23px;
+    width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+} */
+
+
+/* Position Property: */
+/* CSS position: static(default), relative, absolute, fixed, stiky; */
+
+.container{
+    border: 2px solid black;
+    background-color: khaki;
+    height: 4000px;
+}
+
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+
+#box3{
+    position: fixed;
+    top: 13px;
+    left: 15px;
+}
+/* relative: relative to it's normal position will leave a gap at its normal position*/
+/* absolute: relative to it's parent */
+/* fixed: position relative to the broswer window */
