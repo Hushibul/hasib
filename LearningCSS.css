@@ -79,9 +79,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background: url('https://source.unsplash.com/user/erondu/1600x900' no-repeat center center/cover);
 } */
 /* background-repeat: no-repeat, x, y; */
 /* background-position: x, y; */
+/* background: url('link') background-repeat background-position/background-size */
 
 
 
@@ -140,6 +142,8 @@
     text-align: center;
 }  */
 
+
+
 /* 
 Psedu styling: */
 /* .btn{
@@ -172,6 +176,7 @@ a:active{
 } */
 
 
+
 /* Display Property: */
 /* header{
     border: 3px solid red;
@@ -201,10 +206,11 @@ a:active{
 } */
 
 
+
 /* Position Property: */
 /* CSS position: static(default), relative, absolute, fixed, stiky; */
 
-.container{
+/* .container{
     border: 2px solid black;
     background-color: khaki;
     height: 4000px;
@@ -222,7 +228,322 @@ a:active{
     position: fixed;
     top: 13px;
     left: 15px;
+} */
+/* relative: position the element relative to it's normal position will leave a gap at its normal position*/
+/* absolute: position the element relative to it's parent */
+/* fixed: position the element position relative to the broswer window */
+/* sticky: stays sticky with the window */
+
+
+
+/* visibility & z-index*/
+/* .box{
+    width: 170px;
+    height: 170px;
+    border: 2px solid black;
+    
+} */
+
+/* #box1{
+    background-color: green;
+    position: relative;
+    top: 45px;
+    z-index: -1;
+} */
+/* z-index will only works for position porperty: relative, absolute, sticky, fixed; */
+/* whichever z-index is larger will stack above the other one */
+/* 
+
+#box2{
+    background-color: red;
+    visibility: hidden;
+    display: none;
+} */
+/* display: none; will hide the element and the space */
+/* visibility: hidden; will hide the element and show that the space is empty */
+
+/* #box3{
+    background-color: yellow;
+} */
+
+/* #box4{
+    background-color: blue;
+} */
+
+
+
+/* FlexBox: */
+/* .container{
+    width: 100%;
+    height: 544px;
+    border: 2px solid black;
+    display: flex;
+} */
+/* display: flex; for intializing to the flexbox; */
+
+
+/* flex-direction: row(by default); for direction the element towards the row; */
+/* flex-direction: row-reverse; for direction the element towards the row opposite in reverse; */
+/* flex-direction: column; for direction the element towards the column; */
+/* flex-direction: column-reverse; for direction the element towards the column opposite in reverse; */
+
+
+/* flex-wrap: wrap; it will wrap the element to be responsive */
+/* by default its property is no-wrap */
+
+
+/* flex-flow: row-reverse wrap; it will take both flex-direction and the flex-wrap property.*/
+
+
+/* justify-content: will justify the element horizontally or in x-axis direction */
+/* justify-content: center; for taking your element to the center */
+/* justify-content: space-between; for making space between same space between the element */
+/* justify-content: space-evenly; for making even space in every direction of the element. */
+/* justify-content: space-around; for making margin space around every elements; */
+
+
+/* align-items: will justify the element vertically or in y-axis direction */
+/* align-items: center; takes center in vertical */
+/* align-items: flex-start;(by default) takes  the item to start */
+/* align-item: flex-end; takes the element to the end */
+/* align-item: stretch; stretches the element and creates vertical spaces. */
+
+/* .item{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 3px;
+} */
+
+/* flex property for flex item */
+/* #item-1{
+    order: 3;
+    flex-grow: 3;
+} */
+/* order: 3; Higher the order later shows in the container */
+
+/* #item-2{
+    flex-grow: 2;
+    flex-shrink: 3;
+} */
+/* flex-grow: 2; The width of the element increases when the window-width */
+
+/* flex-shrink: 3; The width of the element decreases when the window-width shrinks. */
+
+/* flex-basis: 320px; when flex-direction is set to row then flex-basis will control width. and when flex direction is set to coloumn then flex-basis will control the height. */
+
+
+/* 
+#item-3{
+    flex: 2 2 320px;
+    align-self: center;
+} */
+/* flex: flex-grow flex-shrink flex-basis. a common shorthand for flexbox */
+
+
+/* align-self: center; takes specific item or element to center. */
+/* align-self: flex-end; takes specific item or element to the end. */
+/* align-self: flex-start; takes specific item or element to the start. */
+
+
+/* Size property em, rem, vh, vw: */
+/* h1{
+    text-align: center;
+} */
+
+/* html{
+    font-size: 25px;
+} */
+
+/* #first{
+    font-size: 2em;
+} */
+/* em: it multiplies the size of the parent  */
+
+/* 
+#second{
+ font-size: 2rem;  
+ width: 100vw;
+ height: 100vh;
+} */
+/* rem: it multiplies the size of html or root element size */
+/* vh: takes the height of the viewport like percentage */
+/* vw: takes the width of the viewport like percentage */
+
+
+/* Media Quaries: */
+/* .box{
+    font-size: 50px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    display: none;
 }
-/* relative: relative to it's normal position will leave a gap at its normal position*/
-/* absolute: relative to it's parent */
-/* fixed: position relative to the broswer window */
+
+@media (max-width: 500px) and (min-width: 100px){
+    #box-1{
+        background-color: cyan;
+        color: darkblue;
+        display: block;
+    }
+}
+
+@media (min-width: 500px){
+    #box-2{
+        background-color: black;
+        color: white;
+        display: block;
+    }
+} */
+
+/* More  on selectors: */
+/* Normal selector: */
+/* div p{
+    background-color: blue;
+    color: white;
+} */
+
+/* div > p{
+    background-color: yellow;
+    color: black
+} */
+/* This will target the chile directly under the div */
+
+/* div + p{
+    background-color: green;
+    color: white;
+
+} */
+/* This will target the shibling of div or the element next to div    */
+
+
+
+/* nth-child and other psedu selector */
+/* input[type=text]{
+    color: blue;
+    border: 4px solid black;
+} */
+
+
+/* Child Selector: */
+/* li:nth-child(3){
+    color: cyan;
+    background-color: black;
+} */
+
+/* li:nth-child(2n+1){
+    color: blue;
+} */
+
+/* Odd Child */
+/* li:nth-child(odd){
+    background-color: #fff;
+} */
+
+/* Even Child */
+/* li:nth-child(even){
+    background-color: aqua;
+} */
+
+
+
+/* Before and After Psedu selector: */
+/* body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    
+} */
+
+/* header::before{
+    background: url(https://source.unsplash.com/user/erondu/1600x900) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+} */
+
+/* h3{
+    font-size: 3rem;
+} */
+
+/* section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+} */
+
+/* .navigation{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+} */
+
+/* li{
+    list-style: none;
+    padding: 34px;
+} */
+
+/* p{
+    text-align: center;
+} */
+
+
+/* Box-shadow and Text-shadow */
+/* .container{
+    display: flex;
+} */
+
+/* .card{
+    padding: 23px 12px;
+    margin: 23px 12px;
+    background-color: bisque;
+    box-shadow: 2px 4px 5px blue;
+} */
+/* box-shadow: offset-x offset-y color; */
+/* box-shadow: offset-x offset-y blur-radius color; */
+/* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+/* box-shadow:inset offset-x offset-y color; */
+/* inset function makes shadow in side box */
+/* box-shadow value can be negative. It come toword upside when the value is negative. */
+
+/* .card h2{
+    color: black;
+    text-shadow: 2px 3px 5px white;
+} */
+
+
+/* CSS variable and Custom properties */
+:root{
+    --primary-color: blue;
+    --danger-color: red;
+    --maxw: 333px;
+}
+/* root can take all variable and make is global */
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--danger-color);
+    margin: 2px 9px;
+}
+
+.container{
+    max-width: var(--maxw);
+    margin: auto;
+    background-color: var(--danger-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
