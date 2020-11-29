@@ -523,22 +523,25 @@ a:active{
 
 
 /* CSS variable and Custom properties */
-:root{
+/* :root{
     --primary-color: blue;
     --danger-color: red;
     --maxw: 333px;
-}
+} */
 /* root can take all variable and make is global */
 
-.box{
+/* .box{
     width: 200px;
     height: 200px;
     background-color: var(--primary-color);
     border: 2px solid var(--danger-color);
     margin: 2px 9px;
-}
+} */
 
-.container{
+/* --variable: color; to intialize variable. */
+ /* var(--variable) to apply the variable */
+
+/* .container{
     max-width: var(--maxw);
     margin: auto;
     background-color: var(--danger-color);
@@ -546,4 +549,121 @@ a:active{
     align-items: center;
     justify-content: center;
     
-}
+} */
+
+
+/* KeyFrame and Animation: */
+/* .container{
+    background-color: greenyellow;
+} */
+
+/* .box{
+    background-color: green;
+    width: 250px;
+    height: 250px;
+    position: relative;
+
+    animation-name: shadow2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+
+    animation-direction: reverse;
+
+    animation: shadow1 2s ease-in 3s 3 forwards;
+} */
+
+/* A shorthand for animation */
+/* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+/* @keyframes shadow1{
+    from{
+        width: 200px;
+    }
+    to{
+        width: 1400px;
+    }
+} */
+
+/* @keyframes shadow2{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        top: 0px;
+        left: 250px;
+    }
+} */
+
+
+/* Transition effects: */
+/* body{
+    background-color: black;
+} */
+
+/* .box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 4s;
+
+    transition: all 2s ease-in 0.4s;
+} */
+/* transition shorthand:  */
+/* transition: transition-property transition-duration transition-timing-function transition-delay; */
+
+/* .box:hover{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+
+} */
+
+
+
+/* Tranform Effects: */
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    height: 80vh;
+} */
+
+/* .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+} */
+
+/* .box:hover{
+    transform: rotate(360deg);
+    transform: skew(40deg);
+    transform: scale(2);
+    transform: translateX(123px);
+    transform: translateX(-123px) translateY(123px);
+} */
