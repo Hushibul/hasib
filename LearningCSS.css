@@ -667,3 +667,172 @@ a:active{
     transform: translateX(123px);
     transform: translateX(-123px) translateY(123px);
 } */
+
+
+/* CSS Grid: */
+/* .container{
+    display: grid;
+    grid-template-columns: 300px 100px 100px;
+    grid-gap: 2rem;
+} */
+/* grid-template-columns: 300px 100px 100px;
+grid-template-columns: 300px auto 100px;
+grid-template-columns: 1fr 4fr 3fr; 
+Here, fr divides the grid into ratio.fr means fraction unit.
+grid-template-columns: repeat(3, auto); */
+
+/* .item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 2px solid black;
+    margin: 24px;
+} */
+
+
+/* CSS Grid: Rows and Gaps */
+/* .grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-rows: 2fr;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-gap: 2rem;
+} */
+
+/* .box{
+    background-color: red;
+    border: 2px solid black;
+} */
+
+
+
+/* CSS Grid: Multiple Rows and Columns */
+/* .container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+} */
+
+
+/* .box{
+    background-color: purple;
+    border: 2px solid black;
+    padding: 23px;
+} */
+
+/* .box:first-child{
+    grid-row: 1/ span 3;
+    grid-column: 1/span 3;
+} */
+/* grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; */
+
+
+/* CSS Grid: Autofill and MinMax */
+/* .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+
+/* .box{
+    background-color: lightblue;
+    boreder: 2px solid black;
+} */
+
+
+/* CSS Grid Template: */
+/* .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    'navbar navbar navbar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+} */
+
+/* .item{
+    color: black;
+    background-color: cyan;
+} */
+
+/* #navbar{
+    grid-area: navbar;
+} */
+/* #section{
+    grid-area: section;
+} */
+/* #aside{
+    grid-area: aside;
+} */
+
+/* footer{
+    grid-area: footer;
+} */
+
+
+/* CSS Grid with media queries */
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+    'navbar navbar navabar navbar'
+    'section section section aside'
+    'footer footer footer footer';
+}
+
+nav{
+    grid-area: navbar;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+@media only screen and(max-width: 300px){
+    body{
+        background-color: blue;
+    }
+    .container{
+        grid-template-areas:
+    'navbar navbar navabar navbar'
+    'section section section section'
+    'aside aside aside aside'
+    'footer footer footer footer';
+    }
+
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and(min-width: 300px) and (max-width: 500px){
+    body{
+        background-color: yellow;
+    }
+}
+@media only screen and(min-width: 500px) and (max-width: 800px){
+    body{
+        background-color: green;
+    }
+}
+@media only screen and(min-width: 800px) {
+    body{
+        background-color: red;
+    }
+}
+
+.bdr{
+    border: 2px solid black;
+    padding: 23px;
+    background-color: wheat;
+}
