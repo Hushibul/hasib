@@ -23,7 +23,7 @@
 // var string2="I am String with single quote";
 // var whenToUseSingleQuote='He said, "I am ill"';
 // var backtiks=`${string1} "and"'We can use single quote and double quote inside of backtiks and it won't be a problem' "But we have to write in between strings" ${string2}`;
-// var string_length=backtiks.length;
+// var string_length=backticks.length;
 // var conString=new String("this");
 
 
@@ -31,8 +31,8 @@
 // console.log(string2);
 // console.log(whenToUseSingleQuote);
 // console.log(backtiks);
-// console.log(`Length of backtiks is ${string_length}`);
-// console.log("lenght of the backtik "+string_length);
+// console.log(`Length of backticks is ${string_length}`);
+// console.log("lenght of the backticks "+string_length);
 // console.log(conString);
 
 
@@ -222,8 +222,8 @@
 // }
 
 
-// Using Loops in Arrays
-let friends=["Rimel", "Mahdi", "Koushal", "Tanvi", "Jaber"];
+// Using Loops in JS
+// let friends=["Rimel", "Mahdi", "Koushal", "Tanvi", "Jaber"];
 // regular for loop
 // for (let index = 0; index < friends.length; index++) {
 //     console.log(friends[index]);   
@@ -235,6 +235,256 @@ let friends=["Rimel", "Mahdi", "Koushal", "Tanvi", "Jaber"];
 // });
 
 // forof loop
-for (element of friends){
-    console.log(element);
-}
+// for (element of friends){
+//     console.log(element);
+// }
+
+// forin loop
+// forin loop is used in object 
+// let employee ={
+//     name: "Shawn",
+//     salary: 2,
+//     address: "USA"
+// }
+
+// for(key in employee){
+//     console.log(`The ${key} of employee is ${employee[key]}`);
+// }
+
+// while loop
+// let i=0;
+// while(i<4){
+//     console.log(`${i} is less than four`);
+//     i++;
+// }
+
+// Do while loop
+// let i=0;
+// do{
+//     console.log(`${i} is less than four`);
+//     i++;
+// }while(i<=4);
+
+
+
+// Maupulating DOM: Document Object Model
+// getElementById
+// let main=document.getElementById('main');
+// console.log(main);
+// let nav=document.getElementById('nav');
+// console.log(nav);
+
+// nav.innerHTML="<li>Dynamic</li>"
+
+// getElementByClassName
+// let container=document.getElementsByClassName('container');
+// console.log(container);
+
+// QuerySelector
+// let sel=document.querySelector('.container');
+// console.log('Selector Returns ', sel);
+
+// let sel=document.querySelectorAll('.container');
+// console.log(sel);
+
+
+// EventListener in javascript
+// let para=document.getElementById('para');
+// para.addEventListener('mouseover', function run(){
+//     alert("Mouse Inside");
+// });
+
+// let para=document.getElementById('para');
+// para.addEventListener('mouseout', function run(){
+//     alert("Mouse went outside");
+// });
+
+// function toggleHide(){
+//     let btn=document.getElementById('btn');
+//     let para=document.getElementById('para');
+
+//     if(para.style.display !='none'){
+//         para.style.display='none';
+//     }
+//     else{
+//         para.style.display='block';
+//     }
+// }
+
+
+
+// Some Useful function 
+// setTimeout function: Allow us to run the function onece after the interval time.
+
+// clearTimeout function: Allow us to run the function repeatedly after the interval time.
+
+// console.log("calling function");
+// function greet(name, byeText){
+//     console.log("Hello, Good Morning " +name+ " "+byeText);
+// }
+
+// setTimeout function:
+// timeout=setTimeout(greet, 5000, "Shawn", "Ba_bye");
+// console.log(timeout);
+//Inside setTimeout function you just need to write the name of the function like greet. Do not call the function greet().
+
+// clearTimeout(timeout);
+
+
+// setInterval:
+// intervalId=setInterval(greet, 2000, "Leo", "Go away");
+// clearInterval(intervalId);
+
+//Making Time function:
+// function displayTime(){
+//     time=new Date();
+//     console.log(time);
+//     document.getElementById('time').innerHTML(time);
+// }
+
+// setInterval(displayTime, 1000);
+
+
+// Using Date and time Class in javascript
+// let now=new Date();
+// console.log(now);
+
+// let dt=new Date(1000);//1000miliseconds=1second before
+// console.log(dt);
+
+// let futureDate=new Date("2050-09-13");
+// console.log(futureDate);
+
+// let newDate=new Date(year, month, day, hour, miniute, second, milisecond);
+// let newDate=new Date(3000, 10, 25, 12, 16, 55);
+// console.log(newDate);
+
+// let yr=newDate.getFullYear();
+// console.log("The year is : "+yr);
+
+// let month=newDate.getMonth();
+// console.log("The month is ", month);
+
+// let date=newDate.getDate();
+// console.log("The date is : "+date);
+
+// let hour=newDate.getHours();
+// console.log("The Hour is : "+hour);
+
+// let miniute=newDate.getMinutes();
+// console.log("The miniute is: ", miniute);
+
+// newDate.setDate(12);
+// console.log(newDate);
+
+// Date.now();shows the miliseconds of the passing date
+
+//Running watch in webpage
+// setInterval(updateTime, 1000);
+// function updateTime(){
+//     Time.innerHTML=new Date();
+// }
+
+
+// Arrow function:
+// Regular format:
+// function greet(){
+//     console.log("Good Morning");
+// }
+// greet();
+
+// Arrow format:
+//let greet = ()=> {
+//     console.log("Good Morning");
+// } 
+// greet();
+
+// let greet= () => console.log("Good Morning");
+// greet();
+
+// Function ShortCut using arrow funciton 
+// let sum= (a, b) =>{
+//     return a+b;
+// };
+
+// let sum= (a, b) =>(a+b);
+// console.log(sum);
+
+// let half= a =>a/2;
+
+// let obj={
+//     greeting: "Good Morning",
+//     names: ["Doll", "Dim", "Danny", "Dom"],
+//     speak(){
+//         this.names.forEach((student)=>{
+//             console.log(this.greeting+ "Go to hell"+ student);
+//         });
+//     }
+// }
+
+// obj.speak();
+
+
+
+// Math in javascript
+// using constant for math object:
+// console.log("The value of E ",Math.E);
+// console.log("The value of E ",Math.PI);
+// console.log("The value of E ",Math.LN2);
+// console.log("The value of E ",Math.SQRT2);
+// console.log("The value of E ",Math.LOG2E);
+// console.log("The value of E ",Math.SQRT1_2);
+
+// Math object: 
+// let a=34.5345353;
+// let b=89;
+
+// console.log("The value of a,b", a, b);
+
+//Round, ceiling, floor value
+// console.log("The value of rounded a, b", Math.round(a), Math.round(b));
+// console.log("The ceiling value of a ", Math.ceil(a));
+// console.log("The floor value of a ", Math.floor(a));
+
+//power and square root
+// console.log("The three to the four", Math.pow(3, 4));
+// console.log("The squre root of 36", Math.sqrt(36));
+
+//Absolute value
+// console.log("The absolute value : ", Math.abs(4.66));
+// console.log("The absolute value: "+Math.abs(4.66));
+
+//Trigonmatric value
+// console.log("The value of sin30", Math.sin(30));
+
+//Maximum and minimum
+// console.log("The maximum value: ", Math.max(4, 6, 2));
+// console.log("The minimum value: ", Math.min(4, 6, 7));
+
+//Random number
+//random number b/w (a,b)= a+ (b-a)*Math.random();
+// let j=1;
+// let k=100;
+// let rand=j+(k-j)*Math.random();
+// console.log("The random number of 1 to 100: "+Math.round(rand));
+
+
+
+//JSON: JSON stands for javascript object notation. It stands for storing and transporting object.
+// let jsonObj={
+//     name: "Leo",
+//     work: "Beating",
+//     friend: "Rio",
+//     food: "junk"
+// }
+// console.log(jsonObj);
+
+// let myjsonObj=JSON.stringify(jsonObj);
+//this converts the object into string. Now, we can apply all string property.
+
+// myjsonObj=myjsonObj.replace("Leo", "Deo");
+// console.log(myjsonObj);
+
+// newjsonObj=JSON.parse(myjsonObj);
+//This converts the string file back to json file. But, the file must be a valid JSON string.
+// console.log(newjsonObj);
